@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21144f">
+<title>Popular High School | Computer Academy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">
+    <img src="assets/logo.jpg" alt="Popular High School logo">
+    <span><strong>POPULAR HIGH SCHOOL</strong><small>Computer Academy · Education is True Friend</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#courses">Courses</a><a href="#practice">Practice Lab</a><a href="#exam">Online Exam</a>
+    <button class="nav-login" id="openLogin">Student Login ↗</button>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <span class="eyebrow"><span class="live-dot"></span> LEARN · PRACTISE · ACHIEVE</span>
+    <h1>Build your <span>digital future.</span></h1>
+    <p class="hero-hi">Popular High School Computer Academy में आपका स्वागत है!</p>
+    <p>Learn computer basics, practise real-world skills, and test your knowledge — one lesson at a time.</p>
+    <div class="hero-actions"><button class="btn primary" id="heroLogin">Student Login <span>→</span></button><a class="btn secondary" href="#courses">Explore courses</a></div>
+    <div class="hero-stats"><div><strong>01</strong><small>Beginner friendly</small></div><div><strong>EN + HI</strong><small>Language support</small></div><div><strong>Learn</strong><small>At your pace</small></div></div>
+  </div>
+  <div class="hero-visual">
+    <div class="visual-glow"></div>
+    <div class="computer-card">
+      <div class="screen"><div class="screen-top"><span></span><span></span><span></span><small>Computer Academy</small></div><div class="screen-content"><div class="screen-icon">⌘</div><b>HELLO, LEARNER!</b><p>Your computer journey starts here.</p><div class="progress"><i></i></div><small>Lesson progress · 35%</small></div></div>
+      <div class="monitor-neck"></div><div class="monitor-base"></div>
+      <div class="keyboard-visual"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="floating-tag tag-one">⌨️ Keyboard skills</div><div class="floating-tag tag-two">✓ Learn by doing</div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip"><div><span>✦</span> Simple lessons</div><div><span>✦</span> Practical activities</div><div><span>✦</span> Online quizzes</div><div><span>✦</span> Student progress</div></section>
+
+<section class="section" id="courses">
+  <div class="section-heading"><div><span class="eyebrow">YOUR LEARNING PATH</span><h2>Explore computer courses</h2><p>Start with the basics. Build confidence with every lesson.</p></div><span class="section-count">01 — 06</span></div>
+  <div class="course-grid">
+    <article class="course-card"><div class="course-icon purple">🖥️</div><span class="course-level">BEGINNER · 6 LESSONS</span><h3>Computer Fundamentals</h3><p>Understand computers, hardware, software, and how everything works together.</p><button class="text-button" data-course="fundamentals">View lessons <span>→</span></button></article>
+    <article class="course-card"><div class="course-icon blue">⌨️</div><span class="course-level">BEGINNER · 5 LESSONS</span><h3>Keyboard & Mouse</h3><p>Learn clicks, scrolling, typing, important keys, and useful shortcuts.</p><button class="text-button" data-course="keyboard">View lessons <span>→</span></button></article>
+    <article class="course-card"><div class="course-icon green">🪟</div><span class="course-level">BEGINNER · 7 LESSONS</span><h3>Windows Basics</h3><p>Use the desktop, Start menu, taskbar, windows, and common settings.</p><button class="text-button" data-course="windows">View lessons <span>→</span></button></article>
+    <article class="course-card"><div class="course-icon orange">📁</div><span class="course-level">PRACTICAL · 5 LESSONS</span><h3>Files & Folders</h3><p>Create, rename, copy, move, save, and organise your work confidently.</p><button class="text-button" data-course="files">View lessons <span>→</span></button></article>
+    <article class="course-card"><div class="course-icon pink">📊</div><span class="course-level">OFFICE · 3 MODULES</span><h3>Word, Excel & PowerPoint</h3><p>Build everyday digital skills for school assignments and presentations.</p><button class="text-button" data-course="office">View lessons <span>→</span></button></article>
+    <article class="course-card"><div class="course-icon teal">🛡️</div><span class="course-level">ESSENTIAL · 4 LESSONS</span><h3>Internet & Cyber Safety</h3><p>Browse wisely, recognise scams, and protect your accounts and information.</p><button class="text-button" data-course="safety">View lessons <span>→</span></button></article>
+  </div>
+</section>
+
+<section class="practice-section" id="practice">
+  <div class="practice-copy"><span class="eyebrow light">PRACTICE MAKES PROGRESS</span><h2>Learn it.<br><span>Try it yourself.</span></h2><p>Build confidence with short activities designed for first-time computer users.</p><ul><li>✓ Identify computer parts</li><li>✓ Practise keyboard shortcuts</li><li>✓ Learn safe computer habits</li></ul><button class="btn white" id="practiceBtn">Try a quick activity →</button></div>
+  <div class="practice-panel"><div class="panel-head"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><small>QUICK PRACTICE</small></div><div class="activity"><span class="activity-label">ACTIVITY 01</span><h3>What does Ctrl + C do?</h3><button class="answer" data-answer="wrong">Paste selected content</button><button class="answer" data-answer="correct">Copy selected content</button><button class="answer" data-answer="wrong">Close the computer</button><p id="practiceFeedback" aria-live="polite">Choose your answer to check it.</p></div></div>
+</section>
+
+<section class="section exam-section" id="exam">
+  <div class="section-heading"><div><span class="eyebrow">CHECK YOUR KNOWLEDGE</span><h2>Ready for a quick exam?</h2><p>Try a short sample quiz and see your score instantly.</p></div><div class="exam-badge">📝 <span>5 questions<br><small>Beginner level</small></span></div></div>
+  <div class="exam-card"><div><div class="exam-icon">🎯</div><h3>Computer Basics — Sample Test</h3><p>Test what you know about computer parts, keyboard shortcuts, and basic operations.</p><div class="exam-meta"><span>◷ 5–7 minutes</span><span>✓ Instant demo score</span><span>🌐 English</span></div></div><button class="btn primary" id="startExam">Start sample exam →</button></div>
+</section>
+
+<section class="school-section">
+  <div class="school-photo"><img src="assets/school-reception.webp" alt="Popular High School reception area"></div>
+  <div class="school-copy"><span class="eyebrow">OUR SCHOOL</span><h2>Learning with purpose.</h2><p>Popular High School is helping students build the skills and confidence they need for tomorrow. This Computer Academy demo brings lessons and practice together in one place.</p><div class="school-motto">“Education is True Friend”</div><a href="#home" class="text-button">Back to top ↑</a></div>
+</section>
+
+<section class="final-cta"><div><span class="eyebrow light">YOUR NEXT STEP STARTS HERE</span><h2>Ready to begin learning?</h2><p>Sign in to explore your student learning dashboard.</p></div><button class="btn white" id="ctaLogin">Open student login →</button></section>
+</main>
+
+<footer><div class="footer-brand"><img src="assets/logo.jpg" alt=""><div><strong>POPULAR HIGH SCHOOL</strong><small>Computer Academy</small></div></div><p>Learn. Practise. Test. Achieve.</p><small>© <span id="year"></span> Popular High School · Demo website</small></footer>
+
+<div class="modal-backdrop" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+  <div class="modal"><button class="modal-close" data-close aria-label="Close">×</button><div class="modal-logo">PHS</div><span class="eyebrow">STUDENT PORTAL</span><h2 id="loginTitle">Welcome back!</h2><p>Sign in to your learning space.</p>
+  <form id="loginForm"><label for="studentId">Student ID</label><input id="studentId" autocomplete="username" placeholder="e.g. PHS0001" required><label for="studentPassword">Password</label><div class="password-row"><input id="studentPassword" type="password" autocomplete="current-password" placeholder="Enter password" required><button type="button" id="showPassword">Show</button></div><button class="btn primary full" type="submit">Sign in →</button></form>
+  <div class="demo-note"><strong>Demo preview only</strong><br>Use Student ID <code>PHS0001</code> and password <code>Learn@123</code> to preview the dashboard. This demo login is not secure and must not be used for real student records.</div><p class="form-message" id="loginMessage" aria-live="polite"></p></div>
+</div>
+
+<div class="modal-backdrop" id="lessonModal" role="dialog" aria-modal="true" aria-labelledby="lessonTitle" hidden><div class="modal wide"><button class="modal-close" data-close aria-label="Close">×</button><span class="eyebrow">COURSE LESSONS</span><h2 id="lessonTitle">Computer Fundamentals</h2><p id="lessonDescription"></p><div id="lessonList" class="lesson-list"></div><button class="btn primary" data-close>Got it</button></div></div>
+
+<div class="modal-backdrop" id="examModal" role="dialog" aria-modal="true" aria-labelledby="examTitle" hidden><div class="modal wide"><button class="modal-close" data-close aria-label="Close">×</button><span class="eyebrow">SAMPLE ASSESSMENT</span><h2 id="examTitle">Computer Basics Quiz</h2><div id="examContent"></div></div></div>
+
+<div class="modal-backdrop" id="dashboardModal" role="dialog" aria-modal="true" aria-labelledby="dashboardTitle" hidden><div class="modal wide"><button class="modal-close" data-close aria-label="Close">×</button><span class="eyebrow">STUDENT DASHBOARD · DEMO</span><h2 id="dashboardTitle">Welcome, Student!</h2><p>Your learning overview is ready.</p><div class="dashboard-stats"><div><strong>6</strong><span>Courses</span></div><div><strong>35%</strong><span>Demo progress</span></div><div><strong>1</strong><span>Sample exam</span></div></div><h3>Continue learning</h3><div class="dashboard-course"><span>🖥️</span><div><strong>Computer Fundamentals</strong><small>Lesson 1 · What is a computer?</small></div><button id="dashboardLesson">Open →</button></div><p class="demo-note">This is a front-end preview. Real student accounts, saved progress, secure exams, and results require a configured backend and database.</p><button class="btn primary" data-close>Close dashboard</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
